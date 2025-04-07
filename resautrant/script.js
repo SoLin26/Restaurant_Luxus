@@ -1,23 +1,22 @@
-// Exemple de données simulées pour le menu
+// Beispielhafte Menü-Daten (simuliert)
 const menuData = [
   {
     name: "Foie Gras Maison",
-    description: "Servi avec confiture de figues",
+    description: "Serviert mit Feigenkonfitüre",
     price: "28€",
     image: "../images/foie_gras.jpg"
-
   },
   {
     name: "Filet de Bœuf Rossini",
-    description: "Truffes et sauce au vin rouge",
+    description: "Mit Trüffeln und Rotweinsauce",
     price: "42€",
-    image: "../images/filet de bœuf rossini-1.jpeg"
+    image: "../images/filet_de_boeuf_rossini-1.jpeg"
   },
   {
     name: "Homard Thermidor",
-    description: "Gratiné au four avec sa sauce crémeuse",
+    description: "Im Ofen gratiniert mit cremiger Sauce",
     price: "38€",
-    image: "../images/Homard Thermidor.jpg"
+    image: "../images/homard_thermidor.jpg"
   }
 ];
 
@@ -39,9 +38,11 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   const form = document.getElementById("res-form");
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    alert("Merci pour votre réservation ! Nous vous contacterons bientôt.");
-    form.reset();
-  });
+  if (form) {
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Vielen Dank für Ihre Reservierung! Wir werden Sie bald kontaktieren.");
+      form.reset();
+    });
+  }
 });
