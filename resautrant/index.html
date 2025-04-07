@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant de Luxe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>La Perle Gourmande</h1>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#reservation">Réserver</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero" id="accueil">
+      <h2>Bienvenue dans l'excellence gastronomique</h2>
+      <p>Découvrez une expérience culinaire inoubliable.</p>
+      <a href="#reservation" class="btn">Réservez maintenant</a>
+    </section>
+  </header>
+
+  <section id="menu">
+    <h2>Notre Menu</h2>
+    <div id="menu-items" class="menu-grid"></div>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="../images/plat1.jpg" alt="Plat 1">
+      <img src="../images/plat2.jpg" alt="Plat 2">
+      <img src="../images/plat3.jpg" alt="Plat 3">
+    </div>
+  </section>
+
+  <section id="reservation">
+    <h2>Réserver une table</h2>
+    <form id="res-form">
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <input type="date" required>
+      <input type="time" required>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 123 Rue du Gourmet, Paris<br>
+       📞 +33 1 23 45 67 89<br>
+       ✉️ contact@laperlegourmande.fr</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 La Perle Gourmande. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
