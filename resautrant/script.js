@@ -1,3 +1,4 @@
+// Menü-Daten
 const menuData = [
   {
     name: "Foie Gras Maison",
@@ -18,30 +19,38 @@ const menuData = [
     image: "../images/homard-thermidor-version-allege.jpeg"
   }
 ];
+
+// Alles starten, wenn DOM geladen ist
 window.addEventListener("DOMContentLoaded", () => {
-  // Affichage du menu
+  // Menü anzeigen (optional, falls du später noch ein spezielles Menü anzeigst)
   const menuContainer = document.getElementById("menu-items");
-  menuData.forEach(item => {
-    const div = document.createElement("div");
-    div.classList.add("menu-item");
-    div.innerHTML = `
-      <div class="img-wrapper">
-        <img src="${item.image}" alt="${item.name}" class="menu-img" />
-      </div>
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <strong>${item.price}</strong>
-    `;
-    menuContainer.appendChild(div);
-  });
-  // Traitement du formulaire
+  if (menuContainer) {
+    menuData.forEach(item => {
+      const div = document.createElement("div");
+      div.classList.add("menu-item");
+      div.innerHTML = `
+        <div class="img-wrapper">
+          <img src="${item.image}" alt="${item.name}" class="menu-img" />
+        </div>
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <strong>${item.price}</strong>
+      `;
+      menuContainer.appendChild(div);
+    });
+  }
+
+  // Formular verarbeiten
   const form = document.getElementById("res-form");
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    alert("Merci pour votre réservation ! Nous vous contacterons bientôt.");
-    form.reset();
-  });
-  // Swiper
+  if (form) {
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Merci pour votre réservation ! Nous vous contacterons bientôt.");
+      form.reset();
+    });
+  }
+
+  // Swiper aktivieren
   const swiper = new Swiper('.swiper', {
     loop: true,
     spaceBetween: 20,
@@ -64,12 +73,3 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-
-
-
-
-
-
-
-
