@@ -58,14 +58,19 @@ body {
     margin-bottom: 20px;
   }
   
-  .btn {
+  .btn-container {
+    margin-top: 20px; /* Abstand zwischen dem Bild und dem Button */
+}
+
+.btn {
     background: #a67c52;
     color: white;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-  }
+    display: inline-block; /* Damit der Button als Block angezeigt wird */
+}
   
   section {
     padding: 60px 20px;

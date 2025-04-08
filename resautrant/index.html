@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -25,13 +24,38 @@
     <section class="hero" id="startseite">
       <h2>Willkommen in der Welt der kulinarischen Exzellenz</h2>
       <p>Erleben Sie ein unvergessliches Gourmet-Abenteuer.</p>
-      <a href="#reservierung" class="btn">Jetzt reservieren</a>
+      <img src="../images/welcome.jpg" alt="Willkommen" class="welcome-img"> <!-- Bild hinzugefügt -->
+      <div class="btn-container"> <!-- Container für den Button -->
+        <a href="#reservierung" class="btn">Jetzt reservieren</a> <!-- Button unter dem Bild -->
+      </div>
     </section>
   </header>
 
   <section id="menü">
     <h2>Unser Menü</h2>
-    <div id="menu-items" class="menu-grid"></div>
+    <div id="menu-items" class="menu-grid">
+      <div class="menu-item">
+        <div class="img-wrapper">
+          <img src="../images/vorspeise.jpg" alt="Vorspeise" class="menu-img">
+        </div>
+        <h3>Vorspeise</h3>
+        <p>Leckere Vorspeisen, die den Gaumen erfreuen.</p>
+      </div>
+      <div class="menu-item">
+        <div class="img-wrapper">
+          <img src="../images/hauptspeise.jpg" alt="Hauptspeise" class="menu-img">
+        </div>
+        <h3>Hauptspeise</h3>
+        <p>Herzhafte Hauptgerichte für jeden Geschmack.</p>
+      </div>
+      <div class="menu-item">
+        <div class="img-wrapper">
+          <img src="../images/nachspeise.jpg" alt="Nachspeise" class="menu-img">
+        </div>
+        <h3>Nachspeise</h3>
+        <p>Verführerische Nachspeisen, die den Abend abrunden.</p>
+      </div>
+    </div>
   </section>
 
   <section id="galerie">
