@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant de Luxe</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -60,10 +61,16 @@
 
   <section id="galerie">
     <h2>Galerie</h2>
-    <div class="gallery">
-      <img src="../images/plat1.jpg" alt="Plat 1">
-      <img src="../images/plat2.jpg" alt="Plat 2">
-      <img src="../images/plat3.jpg" alt="Plat 3">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../images/plat1.jpg" alt="Plat 1"></div>
+        <div class="swiper-slide"><img src="../images/plat2.jpg" alt="Plat 2"></div>
+        <div class="swiper-slide"><img src="../images/plat3.jpg" alt="Plat 3"></div>
+        <div class="swiper-slide"><img src="../images/plat4.webp" alt="Plat 4"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </section>
 
@@ -88,7 +95,9 @@
   <footer>
     <p>&copy; 2025 La Perle Gourmande. Tous droits réservés.</p>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Ton script personnalisé -->
+  <script src="script.js"></script>
   <script>
     function öffneMenüFenster() {
       window.open("menu-auswahl.html", "_blank", "width=600,height=400");
