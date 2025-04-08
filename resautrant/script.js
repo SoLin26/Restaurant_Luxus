@@ -9,13 +9,13 @@ const menuData = [
     name: "Filet de Bœuf Rossini",
     description: "Truffes et sauce au vin rouge",
     price: "42€",
-    image: "../images/filet-de-bœuf-rossini-1.jpeg"
+    image: "../images/filet de bœuf rossini-1.jpeg"
   },
   {
     name: "Homard Thermidor",
     description: "Gratiné au four avec sa sauce crémeuse",
     price: "38€",
-    image: "../images/homard-Thermidor.jpg"
+    image: "../images/homard-thermidor-version-allege.jpeg"
   }
 ];
 window.addEventListener("DOMContentLoaded", () => {
