@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: white;
+    color: #0e0d0d;
     display: flex;
     flex-direction: column;
     justify-content: center;
