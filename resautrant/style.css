@@ -47,20 +47,85 @@ body {
     text-decoration: none;
     font-weight: bold;
   }
+  .hero {
+    background: linear-gradient(to bottom, #fffaf5 0%, #fdf4ec 100%);
+    padding: 100px 20px 60px;
+    text-align: center;
+    animation: fadeInHero 1s ease-in-out;
+  }
   
   .hero h2 {
     font-size: 48px;
-    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 20px;
   }
   
   .hero p {
     font-size: 20px;
-    margin-bottom: 20px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .welcome-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
   }
   
   .btn-container {
-    margin-top: 20px; /* Abstand zwischen dem Bild und dem Button */
-}
+    margin-top: 20px;
+  }
+  
+  /* === Animations === */
+  @keyframes fadeInHero {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUpSmooth {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes zoomInFade {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .fade-in-title {
+    animation: fadeInUpSmooth 1s ease forwards;
+  }
+  
+  .fade-in-text {
+    animation: fadeInUpSmooth 1.3s ease forwards;
+  }
+  
+  .fade-in-img {
+    animation: zoomInFade 1.6s ease forwards;
+  }
+  
+  .fade-in-btn {
+    animation: fadeInUpSmooth 2s ease forwards;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  
+    .welcome-img {
+      max-width: 100%;
+    }
+  }
+  
 
 .btn {
     background: #a67c52;
